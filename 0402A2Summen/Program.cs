@@ -10,6 +10,21 @@ namespace _0402A2Summen
     {
         static void Main(string[] args)
         {
+            long n=0; // Eingabevariable
+            long i=0; // Schleifenvariable
+            long s=0; // Summe
+
+            Console.Write("Bitte geben Sie eine Ganzzahl ein : ");
+            if (long.TryParse(Console.ReadLine(), out n))
+            {
+                for ( i = 0; i <= n; i++)
+                {
+                    s = s + i;
+                }
+                Console.WriteLine();
+                Console.WriteLine("Die Summe aller Zahlen von 0 bis {0} ist {1}", n, s);
+                Console.WriteLine();
+            }
         }
     }
 }
